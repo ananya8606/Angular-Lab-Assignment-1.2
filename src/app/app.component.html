@@ -1,0 +1,14 @@
+<form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value)"> 
+  <table>
+    <caption>Angular 2 Operation</caption>
+    <br />
+  <tr>
+  <td><label for="ID">ID</label></td><td><input type="number" name="ID" placeholder="" ngModel></td></tr>
+  <tr><td><label for="Name">Name</label></td><td><input type="text" name="Name" placeholder="" ngModel></td></tr> 
+  <tr><td><label for="Salary">Salary</label></td><td><input type="number" name="Salary" placeholder="" ngModel></td></tr> 
+  <tr><td><label for="Department">Department</label></td><td><input type="text" name="Department" placeholder="" ngModel></td></tr> </table>
+  <br/> 
+  <br/> 
+  <button onsubmit="onClickSubmit()" type="submit">Add Employee</button> 
+</form>
+<p> {{userName.value.ID}} {{userName.value.Name}} {{userName.value.Salary}} {{userName.value.Department}}</p>
